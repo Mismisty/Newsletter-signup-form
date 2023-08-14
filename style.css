@@ -1,0 +1,302 @@
+:root {
+    --primary-Tomato-400:  hsl(4, 100%, 67%);
+    --neutral-Dark-Grey-900: hsl(234, 29%, 20%);
+    --neutral-Charcoal-Grey-400: hsl(235, 18%, 26%);
+    --Grey-300: hsl(231, 7%, 60%);
+    --neutral-White-100: hsl(0, 0%, 100%);
+
+    --ff-base: 'Roboto',sans-serif;
+
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  /*  height: 100%;*/
+  /*  width: 100%;*/
+}
+
+body {
+    font-family: var(--ff-base);
+    font-size: 1em;
+    background-color: var(--neutral-Dark-Grey-900);
+}
+
+
+/*FORM SECTION*/
+
+form {
+    margin-top: -2.9em;
+    height: 41em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25em;
+    background-color: var(--neutral-White-100);
+    border-radius: 20px;
+    
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 2em;
+    font-weight: var(--fw-bold);
+}
+
+.list p {
+    padding-left: 2.5em;
+}
+
+.join {
+    font-family: var(--ff-base);
+    font-size: 1.1em;
+    margin-bottom: 0.7em;
+    margin-left: 1em;
+    margin-right: 1.1em;
+    line-height: 1.5;
+}
+
+.break {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    content: url("assets/images/icon-list.svg");
+    position: absolute;
+    margin-left: .9rem;
+}
+
+/*EMAIL SECTION*/
+
+.subscribe {
+    margin-top: 2.9em;
+}
+
+.flex {
+    display: flex;
+    font-family: var(--ff-base);
+    font-size: 0.935em;
+    gap: 4em;
+}
+
+.email {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+    margin-left: 1em;
+    width: 8em;
+}
+
+.error-msg {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+    font-size: 1em;
+    color: var(--primary-Tomato-400);
+    width: 10em;
+    margin-right: 0.1em;
+}
+
+input[type=email] {
+    margin-top: 1em;
+    width: 24em;
+    padding: 0.9375em;
+    border-radius: 5px;
+    border: 1px solid var(--Grey-300);
+    margin-bottom: 2em;
+    margin-left: 2em;
+    cursor: pointer;  
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    padding-left: 7em;
+    font-size: 14px;
+    font-family: var(--ff-base);
+    color: var(--neutral-Grey-300);
+    font-weight: var(--fw-bold);
+}
+
+.placeholder {
+    color: red;
+}
+
+.button {
+    font-size: 0.925em;
+    width: 22em;
+    margin-left: 2em;
+    padding: 1em;
+    background-color: var(--neutral-Dark-Grey-900);
+    color: var(--neutral-White-100);
+    font-weight: var(--fw-bold);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--primary-Tomato-400);
+}
+
+.confirmation {
+    height: 53em;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: var(--neutral-White-100);
+}
+
+.successMsg {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: var(--neutral-Dark-Grey-900);
+}
+
+.success-icon {
+    margin-top: 8em;
+    margin-bottom: 1.8em;
+    margin-left: 1.6em;
+}
+
+.success-1{
+    font-size: 2.9em;
+    margin-top: -2em;
+    margin-left: 0.em;
+    width: 10em;
+}
+
+.success {
+    font-weight: var(--fw-regular);
+    margin-left: 2.2em;
+    margin-top: -0.9em;
+    line-height: 1.4;
+    margin-bottom: 15em;
+    
+}
+
+.dismiss {
+    display: block;
+    text-align: center;
+    margin-left: 4.6em;
+    width: 20em;
+    padding: 0.975em;
+    background-color: var(--neutral-Charcoal-Grey-400);
+    color: var(--neutral-White-100);
+    font-weight: var(--fw-bold);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.dismiss:hover {
+    background-color: var(--primary-Tomato-400);
+}
+
+
+.attribution {
+    margin-top: 20em;
+}
+
+
+@media screen and (min-width: 375px){
+
+    .container {
+        display: flex;
+        flex-direction:row-reverse ;
+ }
+
+   #form {
+    margin-top: 5em;
+    margin-left: 22em;
+    margin-right: 20em;
+    width: 65em;
+   }
+
+   picture {
+    position: absolute;
+    margin-top: 7em;
+    margin-right: 23em;
+   
+   }
+
+   .subscribe  {
+    display: flex;
+    flex-direction: column;
+   }
+
+   h1 {
+    margin-left: 1em;
+   }
+
+   .join {
+    padding-left: 3em;
+   }
+
+   .break {
+    display: block;
+   }
+
+   ul {
+    margin-left: 3.2em;
+   }
+   
+.email {
+    padding-left: 1em;
+}
+
+   #email .button {
+    margin-left: 1em;
+   }
+
+   .confirmation {
+    margin-top: 15em;
+    height: 30em;
+    width: 30em;
+    border-radius: 25px;
+   }
+
+   .success-icon {
+    margin-top: 2em;
+    padding-left: 1.9em;
+   }
+
+   .success-1{
+    margin-top: -2em;
+    font-weight: 700;
+   }
+
+   .success {
+    padding-left: 1.9em;
+   }
+
+   .dismiss {
+    margin-top: -15em;
+    width: 25em;
+    padding: 1.4em;
+   }
+}
